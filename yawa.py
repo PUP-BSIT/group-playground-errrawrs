@@ -1,1 +1,0 @@
-print("kupal ka kirby")
