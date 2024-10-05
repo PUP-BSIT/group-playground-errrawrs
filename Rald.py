@@ -1,1 +1,0 @@
-print("gerald mamasalanang")
