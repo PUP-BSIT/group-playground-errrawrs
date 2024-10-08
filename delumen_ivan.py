@@ -2,3 +2,11 @@ print("Name: Ivan Virrey Delumen")
 print("Birthday: October 28, 2004")
 print("Gender: Male")
 print("Email: ivandelumen05@gmail.com")
+
+<<<<<<< Updated upstream
+print("This is a dedication message  - simone ")
+
+print("This is a dedication message from mosquito")
+=======
+print("Welcome back! - Daniel")
+>>>>>>> Stashed changes
