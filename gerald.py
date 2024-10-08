@@ -4,3 +4,4 @@ print("Gender: Male")
 print("Email: geraldkasan163@gmail")
 #lagyan nyo ng .venv
 #ay di na pala
+#ambobo ni gerald bai
