@@ -1,1 +1,0 @@
-print("Kel d greyt")
