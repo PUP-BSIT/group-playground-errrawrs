@@ -6,3 +6,4 @@ print("Email: geraldkasan163@gmail")
 #ay di na pala
 
 print("This is a dedication message from simone pogi")
+print("This is a dedication message from moks")
