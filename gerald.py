@@ -5,3 +5,5 @@ print("Email: geraldkasan163@gmail")
 #lagyan nyo ng .venv
 #ay di na pala
 #ambobo ni gerald bai
+
+print("This is a dedication message from simone pogi")
