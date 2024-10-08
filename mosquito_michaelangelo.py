@@ -1,4 +1,4 @@
-print("Michael Angelo P. Mosquito")
-print("June 8, 2005")
-print("Male")
-print("michaelmosquito147@gmail.com")
+print("Name:Michael Angelo P. Mosquito")
+print("Birthday:June 8, 2005")
+print("Gender:Male")
+print("Email:michaelmosquito147@gmail.com")
