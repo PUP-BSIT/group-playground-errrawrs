@@ -7,4 +7,4 @@ print("Email: geraldkasan163@gmail.com")
 print("dedication message - daniel")
 =======
 print("Hello new world Gerald")
->>>>>>> 52eded4dce623fcc3a464493e0e32ce174e4801f
+print("This is a dedication message from - mosquito")
