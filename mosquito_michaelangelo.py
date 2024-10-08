@@ -7,3 +7,5 @@ print("Wassup my nigg")
 print("Hello Kel! -Gerald")
 print("This is my dedication from - simone")
 print("ulol ka kel")
+
+print("taenang yan")
