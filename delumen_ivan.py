@@ -4,5 +4,5 @@ print("Gender: Male")
 print("Email: ivandelumen05@gmail.com")
 
 print("This is a dedication message  - simone ")
-print("This is a dedication message from mosquito")
-print("Welcom to the Team Ivan! -Gerald")
+print("This is a dedication message from -mosquito")
+print("Welcome to the Team Ivan! -Gerald")
