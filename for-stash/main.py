@@ -1,1 +1,1 @@
-new file
+print("try lng")
