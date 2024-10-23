@@ -1,6 +1,6 @@
 all_items = []
 
-#product details
+# Product details
 def enter_product_details():
     global product_name, product_price, product_quantity
     product_name = input("a. Product Name: ")
@@ -16,9 +16,10 @@ while yes_or_no.lower() == "y":
     
     yes_or_no = input("Would you like to add another order? y - YES / n - NO: ")
 
-#buyer details
+# Buyer details
 buyer_name = input("\nWhat is your name: ")
 senior_id_no = input("Senior ID no. (leave blank if not a senior): ")
+
 total_amount = sum(item[3] for item in all_items)  
 
 if senior_id_no: 
@@ -26,7 +27,13 @@ if senior_id_no:
     total_amount -= discount  
 
 for item in all_items:
-    print(f"Items: {item[0]}, Price: {item[1]}, Quantity: {item[2]}, Total: {item[3]}")
-print(f"Total Amount: {total_amount}")
+    print(f"\nItems: {item[0]}, Price: {item[1]}, Quantity: {item[2]}, Total: {item[3]}")
+
+print(f"Total Amount: {total_amount:.2f}")
 print(f"Buyer Name: {buyer_name}")
-print(f"Senior ID No.: {senior_id_no}")  
+
+print("Senior ID No.: ", end="")
+if senior_id_no: 
+    print(senior_id_no) 
+else:
+    print()
