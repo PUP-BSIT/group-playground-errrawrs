@@ -22,17 +22,16 @@ def order_management():
     # Calculate total and apply the discount
     grand_total = sum(product[3] for product in product_orders)  # sum total_amounts
 
-    senior_citizen_id
-    while True:
+    if senior_citizen_id:
         discount = grand_total * 0.10
         grand_total -= discount #used to apply a discount to the grand total
-        break
+        
 
     # Final print
     for product in product_orders:
         print(f"\nItem: {product[0]}, Price: {product[1]}, Quantity: {product[2]}, Total Amount: {product[3]}")
     print(f"Customer Name: {customer_name}")
-    print(f"Senior ID No: {senior_citizen_id if senior_citizen_id else ' '}")
+    print(f"Senior ID No: {senior_citizen_id}")
     print(f"Grand Total: {grand_total}")
 
 order_management()
