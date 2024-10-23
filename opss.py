@@ -31,7 +31,6 @@ for item in all_items:
 
 print(f"Total Amount: {total_amount:.2f}")
 print(f"Buyer Name: {buyer_name}")
-
 print("Senior ID No.: ", end="")
 if senior_id_no: 
     print(senior_id_no) 
