@@ -1,37 +1,48 @@
-def order_management():
-    product_orders = []
-    while True:
-        product_name = input("Product Name: ")
-        product_price = int(input("Price: "))
-        product_quantity = int(input("Quantity: "))
+#function for product details
+def order_take():
+    global product_name, product_price, product_quantity
+    product_name = input("Product Name: ")
+    product_price = int(input("Price: "))
+    product_quantity = int(input("Quantity: "))
+    total = product_price * product_quantity
 
-        total_amount = product_price * product_quantity
-        product_orders.append ((product_name, product_price, product_quantity, total_amount))
+    return [product_name, product_price, product_quantity, total]
 
-        # Ask the user if they want to add a product
-        add_product = input("Do you want to add another item? (y/n): ")
-        if add_product != 'y':
-            break
+#function for senior citizen details
+def senior_citizen_details(total_amount,senior_id_no):
 
-    # Customer details
-    customer_name = input("\nCustomer Name: ")
+    total_amount = sum(item[3] for item in all_items)  
+    if senior_id_no.strip() == "":
+        return total_amount
+    
+    discount = total_amount * 0.10  
+    total_amount -= discount  
+    return total_amount
 
-    # Ensure proper handling for Senior ID input.  we used typecast to convert the string to int
-    senior_citizen_id = input("Senior ID No (blank if not senior citizen): ")
+all_items = [] #global list
 
-    # Calculate total and apply the discount
-    grand_total = sum(product[3] for product in product_orders)  # sum total_amounts
+is_order_again = True
 
-    if senior_citizen_id:
-        discount = grand_total * 0.10
-        grand_total -= discount #used to apply a discount to the grand total
-        
+#asking for another order
+while is_order_again:
+    all_items.append(order_take())
+    user_prompt = input("Would you like to add another order? y - YES / n - NO: ")
+    is_order_again = user_prompt == 'y'
 
-    # Final print
-    for product in product_orders:
-        print(f"\nItem: {product[0]}, Price: {product[1]}, Quantity: {product[2]}, Total Amount: {product[3]}")
-    print(f"Customer Name: {customer_name}")
-    print(f"Senior ID No: {senior_citizen_id}")
-    print(f"Grand Total: {grand_total}")
+total_amount = sum(item[3] for item in all_items)  
 
-order_management()
+#buyer details and senior citizen details
+buyer_name = input("\nWhat is your name: ")
+senior_id_no = input("Senior ID no. (leave blank if not a senior): ")
+
+total_amount = senior_citizen_details(total_amount, senior_id_no)
+
+#Total list and amount of order
+for item in all_items:
+    print(f"\nItems: {item[0]}, Price: {item[1]}, Quantity: {item[2]}, Total: {item[3]}")
+
+print(f"\nTotal Amount: {total_amount}")
+print(f"Buyer Name: {buyer_name}")
+print("Senior ID No.: ", end="")
+if senior_id_no: 
+    print(senior_id_no) 

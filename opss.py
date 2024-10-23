@@ -22,7 +22,7 @@ senior_id_no = input("Senior ID no. (leave blank if not a senior): ")
 
 total_amount = sum(item[3] for item in all_items)  
 
-if senior_id_no: 
+if senior_id_no.strip(): 
     discount = total_amount * 0.10  
     total_amount -= discount  
 
