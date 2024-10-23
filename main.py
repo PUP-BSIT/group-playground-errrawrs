@@ -17,17 +17,16 @@ def order_management():
     customer_name = input("\nCustomer Name: ")
 
     # Ensure proper handling for Senior ID input.  we used typecast to convert the string to int
-    senior_id_input = input("Senior ID No (blank if not senior citizen): ")
-    senior_citizen_id = int(senior_id_input) if senior_id_input else None
+    senior_citizen_id = input("Senior ID No (blank if not senior citizen): ")
 
     # Calculate total and apply the discount
     grand_total = sum(product[3] for product in product_orders)  # sum total_amounts
 
-    if senior_citizen_id is not None:
+    senior_citizen_id
+    while True:
         discount = grand_total * 0.10
         grand_total -= discount #used to apply a discount to the grand total
-    else:
-        discount = 0.0
+        break
 
     # Final print
     for product in product_orders:
