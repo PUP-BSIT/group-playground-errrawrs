@@ -8,7 +8,6 @@ def print_menu():
     print("5. Search Appointment")
     print("6. Exit")
 
-
 def list_all_appointments(appointments):
     #Lists all appointments in the list.
     
@@ -54,12 +53,13 @@ def add_appointment(appointments):
     }
     
     appointments.append(appointment)
-    print("Appointment added successfully!")
+    print("Appointment added successfully!\n")
 
 def update_appointment(appointments):
     #Updates an existing appointment's details.
 
     appointment_id = input("Enter the ID of the appointment to update: ")
+
     for appointment in appointments:
         if appointment['id'] == appointment_id:
             appointment['name'] = input("Enter new patient name: ")
@@ -75,6 +75,7 @@ def delete_appointment(appointments):
     #Deletes an appointment from the list.
 
     appointment_id = input("Enter the ID of the appointment to delete: ")
+
     for delete, appointment in enumerate(appointments):
         if appointment['id'] == appointment_id:
             del appointments[delete]
@@ -90,7 +91,8 @@ def search_appointment(appointments):
     search_value = input(f"Enter the value to search for in {search_field}:  ")
 
     found_appointments = [
-        appointment for appointment in appointments if appointment.get(search_field) == search_value
+        appointment for appointment in appointments if
+        appointment.get(search_field) == search_value
     ]
 
     if found_appointments:
@@ -102,6 +104,7 @@ def search_appointment(appointments):
 def main_function():
     #Main function to control the flow of the program.
     appointments = []
+
     while True:
         print_menu()
         choice = input("Enter your choice: ")
