@@ -68,6 +68,7 @@ def update_appointment(appointments):
             appointment['time'] = input("Enter new appointment time (HH:MM): ")
             print("Appointment record updated successfully!\n")
             return
+        
     print("Appointment not found.\n")
 
 def delete_appointment(appointments):
@@ -79,6 +80,7 @@ def delete_appointment(appointments):
             del appointments[delete]
             print("Appointment record deleted successfully!\n")
             return
+        
     print("Appointment not found.\n")
 
 def search_appointment(appointments):
