@@ -12,7 +12,9 @@ def date_function():
     print("Enter 4 if exit")
 
     while True:
+
         choice = input("Enter your choice: ")
+        
         if choice == "1":
             print("This is the date today:",date_now)   
         elif choice == "2":
