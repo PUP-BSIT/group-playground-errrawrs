@@ -21,9 +21,8 @@ def senior_citizen_details(total_amount,senior_id_no):
 
 all_items = [] #global list
 
-is_order_again = True
-
 #asking for another order - Ivan
+is_order_again = True
 while is_order_again:
     all_items.append(order_take())
     user_prompt = input("Would you like to add another order? y - YES / n - NO: ")
