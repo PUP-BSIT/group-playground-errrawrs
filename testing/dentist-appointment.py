@@ -81,6 +81,8 @@ def delete_appointment(appointments):
             del appointments[delete]
             print("Appointment record deleted successfully!\n")
             return
+        else:
+            continue
         
     print("Appointment not found.\n")
 
